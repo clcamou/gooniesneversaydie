@@ -1,36 +1,25 @@
 {
-  "name": "gooniesneversaydie",
+  "name": "nextjs-passport",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next ./src",
-    "build": "next build",
-    "start": "next start -p $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clcamou/gooniesneversaydie.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/clcamou/gooniesneversaydie/issues"
-  },
-  "homepage": "https://github.com/clcamou/gooniesneversaydie#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
+    "components": "^0.1.0",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.7.0",
     "express": "^4.17.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^9.3.5",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.1.0"
+    "styled": "^1.0.0"
   }
 }
