@@ -6,7 +6,7 @@ class Lessons_Overview extends React.Component{
       }
       //dynamic generation of lesson content based on content type
       generateLessonData(data){
-        if (Array.isArray(data)&&data.length > 0){
+        if (data.length > 0){
           data.map((rows) =>{
             const id = rows.content_id
             const lesson_content = rows.lesson_content;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Lessons_OverView from '../components/Lesson_Hub'
+import Lessons_OverView from '../components/Assignment_Hub'
 
 
 function LessonsCard({ user }) {

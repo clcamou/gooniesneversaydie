@@ -6,7 +6,7 @@ class Lessons_Hub extends React.Component{
       }
 
       generateLessons(data){
-        if (Array.isArray(data)&&data.length > 0){
+        if (data.length > 0){
           data.map((rows) =>{
             const id = rows.lesson_id
             const lesson_name = rows.lesson_name;
