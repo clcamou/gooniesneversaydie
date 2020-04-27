@@ -65,8 +65,10 @@ function Header({ user, loading }) {
                         </NavLink>
                       </DropdownItem>
                       <DropdownItem>
-                      <img src="https://i.ibb.co/gMgDZSH/logout.png" alt="logout" border="0" width={30}></img>
-                        <a href="/logout">Logout</a>
+                        <NavLink href="/logout">
+                          <img src="https://i.ibb.co/gMgDZSH/logout.png" alt="logout" border="0" width={30}></img>
+                          <a>Logout</a>
+                        </NavLink>
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
