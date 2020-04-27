@@ -14,7 +14,7 @@ export default async function assignmenthub({ user }) {
     return (
     <>
     <h1>Grades for {user.nickname}</h1>
-     <Assignment_Hub/>
+     <Assignment_Hub data = {[]}/>
     </>
     )
   }

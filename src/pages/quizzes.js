@@ -8,8 +8,7 @@ export default async function quizzes({user}) {
         body: {user}
     })
 */
-let data = []
     return (
-     <Quizzes_All data = {data}/>
+     <Quizzes_All data = {[]}/>
     )
   }
