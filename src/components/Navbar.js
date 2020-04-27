@@ -59,6 +59,11 @@ function Header({ user, loading }) {
                         Quizzes</a></NavLink>
                       </DropdownItem>
                       <DropdownItem>
+                        <NavLink href="/grades">
+                          <a className="nav-link"><img src="https://i.ibb.co/y6z6tZj/grades.png" alt="grades" border="0" width={30}></img> Grades </a>
+                        </NavLink>
+                      </DropdownItem>
+                      <DropdownItem>
                         <NavLink href="/profile">
                       <img src="https://i.ibb.co/XFBjpwg/account.png" alt="account" border="0" width={30}></img>
                           <a>Profile</a>
