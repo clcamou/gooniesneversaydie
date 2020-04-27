@@ -15,6 +15,9 @@ body {
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background-image: url(./images/geometric-leaves.png);
 }
+a {
+  color: seashell;
+}
 
 h2 {
   text-align: center;

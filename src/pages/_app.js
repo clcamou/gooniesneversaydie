@@ -37,7 +37,7 @@ class MyApp extends App {
     return (
       <NextContainer>
         <Head>
-          <title>Thoughts!</title>
+          <title>The Learning Curve</title>
         </Head>
         <Navbar user={this.state.user} />
         <Container>
