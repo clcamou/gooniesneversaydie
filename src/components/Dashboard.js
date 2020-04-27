@@ -12,12 +12,12 @@ function Dashboard({ user, loading }) {
                         <div className="row">
                             <div className="col-sm">
                                 <div className="card">
-                                    <h4><a href="/lessons"><img src="https://i.ibb.co/9vLXnY3/homework.png" alt="homework" border="0" width={30}></img>Lessons</a></h4>
+                                    <h4><a href="/lessons"><img src="https://i.ibb.co/9vLXnY3/homework.png" alt="homework" border="0" width={30}></img> Lessons</a></h4>
                                 </div>
                             </div>
                             <div className="col-sm">
                                 <div className="card">
-                                    <h4><a href="/grades"><img src="https://i.ibb.co/y6z6tZj/grades.png" alt="grades" border="0" width={30}></img>Grades</a></h4>
+                                    <h4><a href="/grades"><img src="https://i.ibb.co/y6z6tZj/grades.png" alt="grades" border="0" width={30}></img> Grades</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ function Dashboard({ user, loading }) {
                             </div>
                             <div className="col-sm">
                                 <div className="card">
-                                    <h4><a href="/profile"><img src="https://i.ibb.co/XFBjpwg/account.png" alt="account" border="0" width={30}></img>Profile</a></h4>
+                                    <h4><a href="/profile"><img src="https://i.ibb.co/XFBjpwg/account.png" alt="account" border="0" width={30}></img> Profile</a></h4>
                                 </div>
                             </div>
                         </div>

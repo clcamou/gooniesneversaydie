@@ -22,7 +22,7 @@ class Lessons_Hub extends React.Component{
           })
         }else{
           return(
-            <h1>No Lessons Posted Yet!</h1>
+            <h4> No Lessons Posted Yet! </h4>
           )
         }
       }

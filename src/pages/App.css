@@ -23,7 +23,7 @@ header {
 .navbar-nav > li > .dropdown-menu { background-color: cadetblue; }
  
 
-h1, h6, h2 {
+h1, h6, h2, h4 {
   color: white;
   text-align: center;
   margin: auto;
@@ -31,10 +31,6 @@ h1, h6, h2 {
   font-family: 'Indie Flower', cursive;
 }
 
-h4 {
-  color: seashell;
-  font-size: 'Indie Flower', cursive;
-}
 
 p {
   color: seashell;
