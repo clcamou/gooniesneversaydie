@@ -53,7 +53,6 @@ app.prepare().then(() => {
   server.use(passport.initialize());
   server.use(passport.session());
   server.use(authRoutes);
-
   server.use(thoughtsAPI);
 
   // 6 - you are restricting access to some routes
@@ -64,6 +63,7 @@ app.prepare().then(() => {
 
   server.use("/profile", restrictAccess);
   server.use("/share-thought", restrictAccess);
+  server.use("/announcements.js", restrictAccess);
 
   // handling everything else with Next.js
   server.get("*", handle);

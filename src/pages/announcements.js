@@ -10,7 +10,7 @@ function Anncouncements(props) {
   );
 }
 
-Index.getInitialProps = async ({ req }) => {
+Anncouncements.getInitialProps = async ({ req }) => {
   const baseURL = req ? `${req.protocol}://${req.get("Host")}` : "";
   const res = await fetch(`${baseURL}/api/thoughts`);
   return {

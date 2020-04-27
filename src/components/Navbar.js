@@ -19,13 +19,22 @@ export default function AppNavbar({ user }) {
             {user && (
               <>
                 <Link href="/announcements">
-                  <a className="nav-link">Announcements</a>
+                  <a className="nav-link"> Announcements </a>
+                </Link>
+                <Link href="/lessons">
+                  <a className="nav-link"> Lessons </a>
+                </Link>
+                <Link href="/quizzes">
+                  <a className="nav-link"> Quizzes </a>
                 </Link>
                 <Link href="/profile">
-                  <a className="nav-link">Profile</a>
+                  <a className="nav-link"> Profile </a>
+                </Link>
+                <Link href="/about">
+                  <a className="nav-link"> About </a>
                 </Link>
                 <Link href="/logout">
-                  <a className="nav-link">Log Out</a>
+                  <a className="nav-link"> Log Out </a>
                 </Link>
               </>
             )}
@@ -38,5 +47,6 @@ export default function AppNavbar({ user }) {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
   );
 }

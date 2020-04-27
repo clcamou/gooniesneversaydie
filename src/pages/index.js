@@ -1,14 +1,13 @@
 import Container from "react-bootstrap/Container";
 
 
-function Index() {
+function Index(props) {
   return (
     <Container>
-      <div> <h1>Welcome to The Learning Curve </h1> </div>
+      <h1> Welcome </h1>
     </Container>
   );
 }
-
 
 
 export default Index;

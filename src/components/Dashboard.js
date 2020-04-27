@@ -1,49 +1,27 @@
-import React from 'react';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Thought from "./Thought";
+import styled from "styled-components";
 
-class Dashboard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  componentDidMount() {
-    // fetch user info using username, then save as cookie
-
-  }
-  render() {
-    return (
-      <div className="dashboard-container">
-        <div className="row">
-          <div className="col-sm">
-            <div className="card">
-              <h4><a href="/api/lessons">Lessons</a></h4>
-            </div>
-          </div>
-          <div className="col-sm">
-            <div className="card">
-              <h4><a href="/grades">Grades</a></h4>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm">
-            <div className="card">
-              <h4><a href="/quizzes">Quizzes</a></h4>
-              </div>
-            </div>
-            <div className="col-sm">
-              <div className="card">
-                <h4><a href="/profile">Profile</a></h4>
-              </div>
-              </div>
-          </div>
-          <style jsx>{`
-       h4 {
-         color: cadetblue;
-         text-align: center;
-         padding: 20px
-       }
-     `}</style>
-        </div>
-    )
-  }
+const Wrapper = styled.section`
+   background: cadetblue;
+   color: seashell;
+`
+export default function Thoughts(props) {
+  return (
+    <Wrapper>
+    <Row>
+      <Col xs={12}>
+        <h2>Announcements</h2>
+      </Col>
+      {props.thoughts &&
+        props.thoughts.map(thought => (
+          <Col key={thought._id} xs={12} sm={6} md={4} lg={3}>
+            <Thought thought={thought} />
+          </Col>
+        ))}
+      {!props.thoughts && <Col xs={12}>Loading...</Col>}
+    </Row>
+    </Wrapper>
+  );
 }
-export default Dashboard
