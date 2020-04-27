@@ -5,10 +5,16 @@ const Picture = styled.img`
   border: 3px solid white;
   width: 100px;
 `;
+const Wrapper = styled.section`
+  background: cadetblue;
+  color: seashell;
+`;
+
 
 function Profile({ user }) {
   return (
     <div>
+    <Wrapper>
       <h2>
         <Picture src={user.picture} alt={user.displayName} /> Hello, {user.displayName}
       </h2>
@@ -18,6 +24,7 @@ function Profile({ user }) {
           <li key={key}>{key}: {user[key].toString()}</li>
         ))}
       </ul>
+      </Wrapper>
     </div>
   );
 }

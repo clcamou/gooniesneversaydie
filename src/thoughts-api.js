@@ -31,5 +31,4 @@ const thoughts = [
     res.send({ message: "Thanks!" });
   });
   
-  
   module.exports = router;

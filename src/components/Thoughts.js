@@ -6,7 +6,7 @@ export default function Thoughts(props) {
   return (
     <Row>
       <Col xs={12}>
-        <h2>Latest Thoughts</h2>
+        <h2>Announcements</h2>
       </Col>
       {props.thoughts &&
         props.thoughts.map(thought => (
