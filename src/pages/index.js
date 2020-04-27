@@ -1,12 +1,11 @@
 import Container from "react-bootstrap/Container";
 import fetch from "isomorphic-fetch";
-import Dashboard from "../components/Dashboard";
-
+import Thoughts from "../components/Thoughts";
 
 function Index(props) {
   return (
     <Container>
-      <Dashboard thoughts={props.thoughts} />
+      <Thoughts thoughts={props.thoughts} />
     </Container>
   );
 }
