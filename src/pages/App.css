@@ -22,11 +22,7 @@ header {
 }
 
 
-.card-login {
-  text-align: center;
-}
-
-h1 {
+h1, h6, h2 {
   color: white;
   text-align: center;
   margin: auto;

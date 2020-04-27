@@ -53,6 +53,7 @@ class Lessons_Overview extends React.Component{
           <div className = "lessons-container">
               <h1 id = {this.props.id} className = "lesson-title">{this.props.title}</h1>
             {this.generateLessonData(this.props.data)}
+           
           </div>
         )
       }

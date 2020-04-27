@@ -43,9 +43,12 @@ class MyApp extends App {
         <Navbar user={this.state.user} />
         <Container>
           <Jumbotron>
-            <Component {...props} />
+          <Component {...props} />
+          </Jumbotron>
+          <Jumbotron>
             <Dashboard {...props}/>
           </Jumbotron>
+          
         </Container>
       </NextContainer>
     );
