@@ -21,7 +21,7 @@ function Header({ user, loading }) {
   return (
 
       <header>
-      <Navbar color="primary" expand="md">
+      <Navbar color="primary" expand="sm">
         <Container>
         <NavbarBrand><img src="https://i.ibb.co/TRTs2Nc/logo.png" alt="logo" border="0" width={125}></img></NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -88,9 +88,7 @@ function Header({ user, loading }) {
         </Collapse>
         </Container>
       </Navbar>
-      <style jsx>{`
-        
-       `}</style>
+ 
     
     </header>
 
