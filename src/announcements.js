@@ -1,17 +1,17 @@
 import Container from "react-bootstrap/Container";
 import fetch from "isomorphic-fetch";
-import Dashboard from "../components/Dashboard";
+import Thoughts from "../components/Thoughts";
 
 
-function Index(props) {
+function Anncouncements(props) {
   return (
     <Container>
-      <Dashboard thoughts={props.thoughts} />
+      <Thoughts thoughts={props.thoughts} />
     </Container>
   );
 }
 
-Index.getInitialProps = async ({ req }) => {
+Anncouncements.getProps = async ({ req }) => {
   const baseURL = req ? `${req.protocol}://${req.get("Host")}` : "";
   const res = await fetch(`${baseURL}/api/thoughts`);
   return {
@@ -19,4 +19,4 @@ Index.getInitialProps = async ({ req }) => {
   };
 };
 
-export default Index;
+export default Anncouncements;
