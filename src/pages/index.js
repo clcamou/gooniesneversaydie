@@ -1,13 +1,20 @@
+import fetch from "isomorphic-fetch";
+import Thoughts from "../components/Thoughts";
 
-
-function Index() {
+function Index(props) {
   return (
-    <div>
-      <h1> Welcome to the Learning Curve</h1>
-    </div>
+    <Container>
+      <Thoughts thoughts={props.thoughts} />
+    </Container>
   );
 }
 
-
+Index.getInitialProps = async ({ req }) => {
+  const baseURL = req ? `${req.protocol}://${req.get("Host")}` : "";
+  const res = await fetch(`${baseURL}/api/thoughts`);
+  return {
+    thoughts: await res.json()
+  };
+};
 
 export default Index;
