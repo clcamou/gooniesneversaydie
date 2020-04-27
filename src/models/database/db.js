@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 
 const db = {};
 //connect to mySQL 
-const connection = new Sequelize('remoteClassroom','root', 'yourPasswordGoesHere', {
+const connection = new Sequelize('remoteClassroom','root', 'Greenapples_45', {
     // change host when hosted and set up with jawsdb
     host: "localhost", 
     dialect: "mysql",

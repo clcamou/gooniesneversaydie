@@ -1,4 +1,4 @@
-import  Lesson_Content  from "../../database/models/Lesson_Content";
+import  Lesson_Content  from "./models/Lesson_Contentt";
 
 
 export default async (req,res) => {
