@@ -7,8 +7,8 @@ const router = express.Router();
 router.use(bodyParser.json());
 
 const thoughts = [
-    { _id: 123, message: "Please check the lesson hub for assignments", author: "unknown" },
-    { _id: 456, message: "No homework this Friday", author: "unknown" }
+    { _id: 123, message: "Please check the lesson hub for assignments", author: "Ms. Camou" },
+    { _id: 456, message: "No homework this Friday", author: "Ms. Camou" }
   ];
   
   router.get("/api/thoughts", (req, res) => {
@@ -26,7 +26,7 @@ const thoughts = [
     const newThought = {
       _id: new Date().getTime(),
       message,
-      author: req.user.displayName
+      author: req.user.nickname
     };
     thoughts.push(newThought);
     res.send({ message: "Thanks!" });

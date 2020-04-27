@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const Picture = styled.img`
   border-radius: 50%;
@@ -20,6 +21,11 @@ function Profile({ user }) {
       </h2>
       <ul>
        <p> Email: {user.displayName} </p>
+      </ul>
+      <ul>
+      <Link href="/share-thought">
+              <a className="nav-link">New Announcement </a>
+            </Link>
       </ul>
       </Wrapper>
     </div>
