@@ -6,7 +6,7 @@ class Quiz extends React.Component{
       }
 
       generateQuestions(data){
-        if (data.length > 0){
+        if (Array.isArray(data)&&data.length > 0){
           data.map((rows) =>{
             const question_number = rows.question_number
             const prompt = rows.prompt
