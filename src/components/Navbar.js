@@ -33,7 +33,7 @@ function Header({ user, loading }) {
             </NavItem>
             <NavItem>
               <NavLink href="/about">
-                <a>About</a>
+                <a> About </a>
               </NavLink>
             </NavItem>
             {!loading &&
@@ -56,7 +56,7 @@ function Header({ user, loading }) {
                       <DropdownItem>
                       <NavLink href="/quizzes">
                         <a className="nav-link"><img src="https://i.ibb.co/Tv1hk0c/test.png" alt="test" border="0" width={30}></img>
-                        Quizzes</a></NavLink>
+                        Quizzes </a></NavLink>
                       </DropdownItem>
                       <DropdownItem>
                         <NavLink href="/grades">
@@ -66,13 +66,13 @@ function Header({ user, loading }) {
                       <DropdownItem>
                         <NavLink href="/profile">
                       <img src="https://i.ibb.co/XFBjpwg/account.png" alt="account" border="0" width={30}></img>
-                          <a>Profile</a>
+                          <a> Profile </a>
                         </NavLink>
                       </DropdownItem>
                       <DropdownItem>
                         <NavLink href="/logout">
                           <img src="https://i.ibb.co/gMgDZSH/logout.png" alt="logout" border="0" width={30}></img>
-                          <a>Logout</a>
+                          <a> Logout </a>
                         </NavLink>
                       </DropdownItem>
                     </DropdownMenu>
@@ -80,7 +80,7 @@ function Header({ user, loading }) {
                 </>
               ) : (
                   <NavItem>
-                    <NavLink href="/login"><a>Login</a>
+                    <NavLink href="/login"><a> Login </a>
                     </NavLink>
                   </NavItem>
                 ))}

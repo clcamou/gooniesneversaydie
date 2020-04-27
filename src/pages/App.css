@@ -21,7 +21,7 @@ header {
   background-color: #fff;
 }
 .navbar-nav > li > .dropdown-menu { background-color: cadetblue; }
-
+ 
 
 h1, h6, h2 {
   color: white;
@@ -47,6 +47,12 @@ a {
 
 .jumbotron {
   background-color: cadetblue;
+  padding: 10px;
+  margin-top: 10%;
+}
+
+.jumbotron-1 {
+  background-color: transparent;
   padding: 10px;
   margin-top: 10%;
 }

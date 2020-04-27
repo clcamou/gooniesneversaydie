@@ -45,10 +45,9 @@ class MyApp extends App {
           <Jumbotron>
           <Component {...props} />
           </Jumbotron>
-          <Jumbotron>
+          <Jumbotron-1>
             <Dashboard {...props}/>
-          </Jumbotron>
-          
+          </Jumbotron-1>
         </Container>
       </NextContainer>
     );
