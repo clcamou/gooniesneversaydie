@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/clcamou/gooniesneversaydie#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.0.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "body-parser": "^1.19.0",
