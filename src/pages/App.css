@@ -16,7 +16,9 @@ body {
   background-image: url(./images/geometric-leaves.png);
 }
 
-
+h2 {
+  text-align: center;
+}
 header {
   background-color: #fff;
 }
@@ -37,3 +39,4 @@ h1 {
 p {
   color: seashell;
 }
+

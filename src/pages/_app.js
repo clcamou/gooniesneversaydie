@@ -6,6 +6,8 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Navbar from "../components/Navbar";
 import './App.css'
 
+
+
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};

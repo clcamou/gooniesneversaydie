@@ -1,13 +1,17 @@
 import Container from "react-bootstrap/Container";
 import fetch from "isomorphic-fetch";
 import Thoughts from "../components/Thoughts";
+import styled from "styled-components";
 
+const styledContainer = styled(Container) `
+   background: cadetblue;
+`;
 
 function Index(props) {
   return (
-    <Container>
+    <styledContainer>
       <Thoughts thoughts={props.thoughts} />
-    </Container>
+    </styledContainer>
   );
 }
 

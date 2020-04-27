@@ -1,9 +1,15 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Thought from "./Thought";
+import styled from "styled-components";
 
+const Wrapper = styled.section`
+   background: cadetblue;
+   color: seashell;
+`
 export default function Thoughts(props) {
   return (
+    <Wrapper>
     <Row>
       <Col xs={12}>
         <h2>Announcements</h2>
@@ -16,5 +22,6 @@ export default function Thoughts(props) {
         ))}
       {!props.thoughts && <Col xs={12}>Loading...</Col>}
     </Row>
+    </Wrapper>
   );
 }
