@@ -8,7 +8,7 @@ class Assignment_Hub extends React.Component{
       }
 
       generateAssignments(data){
-        if (data.length > 0){
+        if (Array.isArray(data) && data.length > 0){
           data.map((rows) =>{
             const id = rows.assignment_id
             const assignment_name = rows.assignment_name;
