@@ -11,8 +11,10 @@ export default async function assignmenthub({ user }) {
         }
     })
     */
-   let data = []
     return (
-     <Assignment_Hub data = {data}/>
+    <>
+    <h1>Grades for {user.nickname}</h1>
+     <Assignment_Hub/>
+    </>
     )
   }

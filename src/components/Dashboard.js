@@ -12,7 +12,7 @@ function Dashboard({ user, loading }) {
                         <div className="row">
                             <div className="col-sm">
                                 <div className="card">
-                                    <h4><a href="/api/lessons">Lessons</a></h4>
+                                    <h4><a href="/lessons">Lessons</a></h4>
                                 </div>
                             </div>
                             <div className="col-sm">
