@@ -48,10 +48,10 @@ function Dashboard({ user, loading }) {
            padding: 20px
          }
          .card {
-             background-color: seashell
+             background-color: cadetblue;
          }
          a {
-            color: cadetblue;
+            color: seashell;
          }
        `}</style>
 
