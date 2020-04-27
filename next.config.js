@@ -30,7 +30,7 @@ module.exports = {
     REDIRECT_URI:
       process.env.REDIRECT_URI || 'http://localhost:3000/api/callback',
     POST_LOGOUT_REDIRECT_URI:
-      process.env.POST_LOGOUT_REDIRECT_URI || 'http://localhost:3000/',
+      process.env.POST_LOGOUT_REDIRECT_URI || 'http://localhost:5000/',
     SESSION_COOKIE_SECRET: process.env.SESSION_COOKIE_SECRET,
     SESSION_COOKIE_LIFETIME: 7200, // 2 hours
   },
