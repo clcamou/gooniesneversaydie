@@ -21,9 +21,9 @@ function Header({ user, loading }) {
   return (
 
       <header>
-      <Navbar light expand="md">
+      <Navbar color="primary" expand="md">
         <Container>
-        <NavbarBrand><img src="https://i.ibb.co/TRTs2Nc/logo.png" alt="logo" border="0"></img></NavbarBrand>
+        <NavbarBrand><img src="https://i.ibb.co/TRTs2Nc/logo.png" alt="logo" border="0" width={125}></img></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -87,7 +87,11 @@ function Header({ user, loading }) {
           </Nav>
         </Collapse>
         </Container>
-      </Navbar>    
+      </Navbar>
+      <style jsx>{`
+        
+       `}</style>
+    
     </header>
 
   )
