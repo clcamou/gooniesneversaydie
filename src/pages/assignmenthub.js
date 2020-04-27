@@ -5,7 +5,7 @@ import { Router } from "express";
 function assignmenthub({ user }) {
     const [assignments] = useState("");
     
-    let data = await fetch("/api/getallstudentassignments", {
+    let data = fetch("/api/getallstudentassignments", {
         method: "GET",
         body: JSON.stringify({
             assignments

@@ -18,8 +18,8 @@ export default function AppNavbar({ user }) {
           <Nav className="mr-auto">
             {user && (
               <>
-                <Link href="/share-thought">
-                  <a className="nav-link">New Thought</a>
+                <Link href="/announcements">
+                  <a className="nav-link">Announcements</a>
                 </Link>
                 <Link href="/profile">
                   <a className="nav-link">Profile</a>
