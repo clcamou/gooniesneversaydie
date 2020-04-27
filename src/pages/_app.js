@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Navbar from "../components/Navbar";
 import './App.css'
+import Dashboard from "../components/Dashboard"
 
 
 class MyApp extends App {
@@ -43,6 +44,7 @@ class MyApp extends App {
         <Container>
           <Jumbotron>
             <Component {...props} />
+            <Dashboard/>
           </Jumbotron>
         </Container>
       </NextContainer>

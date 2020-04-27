@@ -1,52 +1,88 @@
-import Link from "next/link";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import React, { useState } from 'react';
+import {
+  Collapse,
+  NavbarToggler,
+  NavbarBrand,
+  Navbar,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownMenu,
+  DropdownItem,
+  DropdownToggle,
+  Container, 
+} from 'reactstrap'
 
-export default function AppNavbar({ user }) {
-  const navbarStyle = { marginBottom: "25px" };
+
+function Header({ user, loading }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
   return (
-    <Navbar bg="light" expand="lg" style={navbarStyle}>
-      <Container>
-        <Navbar.Brand>
-          <Link href="/">
-            <a>The Learning Curve</a>
-          </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            {user && (
-              <>
-                <Link href="/announcements">
-                  <a className="nav-link"> Announcements </a>
-                </Link>
-                <Link href="/lessons">
-                  <a className="nav-link"> Lessons </a>
-                </Link>
-                <Link href="/quizzes">
-                  <a className="nav-link"> Quizzes </a>
-                </Link>
-                <Link href="/profile">
-                  <a className="nav-link"> Profile </a>
-                </Link>
-                <Link href="/about">
-                  <a className="nav-link"> About </a>
-                </Link>
-                <Link href="/logout">
-                  <a className="nav-link"> Log Out </a>
-                </Link>
-              </>
-            )}
-            {!user && (
-              <Link href="/login">
-                <a className="nav-link">Log In</a>
-              </Link>
-            )}
+
+      <header>
+      <Navbar light expand="md">
+        <Container>
+        <NavbarBrand><img src="https://i.ibb.co/TRTs2Nc/logo.png" alt="logo" border="0"></img></NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink href="/"> <img src="https://i.ibb.co/z6wxv1K/high-school.png" alt="about" border="0" width={30}></img>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/about">
+                <a>About</a>
+              </NavLink>
+            </NavItem>
+            {!loading &&
+              (user ? (
+                <>
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                    <img src="https://i.ibb.co/xqvggv1/settings.png" alt="settings" border="0" width={30}></img>
+                    </DropdownToggle>
+                    <DropdownMenu left>
+                    <DropdownItem>
+                        <NavLink href="/announcements">
+                          <a className="nav-link"> <img src="https://i.ibb.co/YZrZWVN/loudspeaker.png" alt="loudspeaker" border="0" width={30}></img> Announcements </a>
+                        </NavLink>
+                      </DropdownItem>
+                      <DropdownItem>
+                      <NavLink href="/lessons">
+                        <a className="nav-link"><img src="https://i.ibb.co/9vLXnY3/homework.png" alt="homework" border="0" width={30}></img> Lessoons </a></NavLink>
+                      </DropdownItem>
+                      <DropdownItem>
+                      <NavLink href="/quizzes">
+                        <a className="nav-link"><img src="https://i.ibb.co/Tv1hk0c/test.png" alt="test" border="0" width={30}></img>
+                        Quizzes</a></NavLink>
+                      </DropdownItem>
+                      <DropdownItem>
+                        <NavLink href="/profile">
+                      <img src="https://i.ibb.co/XFBjpwg/account.png" alt="account" border="0" width={30}></img>
+                          <a>Profile</a>
+                        </NavLink>
+                      </DropdownItem>
+                      <DropdownItem>
+                      <img src="https://i.ibb.co/gMgDZSH/logout.png" alt="logout" border="0" width={30}></img>
+                        <a href="/logout">Logout</a>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                </>
+              ) : (
+                  <NavItem>
+                    <NavLink href="/login"><a>Login</a>
+                    </NavLink>
+                  </NavItem>
+                ))}
           </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    
-  );
+        </Collapse>
+        </Container>
+      </Navbar>    
+    </header>
+
+  )
 }
+export default Header

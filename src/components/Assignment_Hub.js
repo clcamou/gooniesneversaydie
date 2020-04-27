@@ -4,9 +4,9 @@ class Assignment_Hub extends React.Component{
   constructor(props){
       super(props);
       }
-
+      
       generateAssignments(data){
-        if (data.length > 0){
+        if (data > 0){
           data.map((rows) =>{
             const id = rows.assignment_id
             const assignment_name = rows.assignment_name;

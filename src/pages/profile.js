@@ -16,13 +16,10 @@ function Profile({ user }) {
     <div>
     <Wrapper>
       <h2>
-        <Picture src={user.picture} alt={user.displayName} /> Hello, {user.displayName}
+        <Picture src={user.picture} alt={user.displayName} /> Hello, {user.nickname}
       </h2>
-      <p>Welcome:</p>
       <ul>
-        { Object.keys(user).map(key => (
-          <li key={key}>{key}: {user[key].toString()}</li>
-        ))}
+       <p> Email: {user.displayName} </p>
       </ul>
       </Wrapper>
     </div>

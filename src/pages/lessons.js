@@ -11,3 +11,4 @@ function LessonsCard({ user }) {
     )
 }
 
+export default LessonsCard
