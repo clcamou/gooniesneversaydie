@@ -43,7 +43,7 @@ function Header({ user, loading }) {
                     <DropdownToggle nav caret>
                     <img src="https://i.ibb.co/xqvggv1/settings.png" alt="settings" border="0" width={30}></img>
                     </DropdownToggle>
-                    <DropdownMenu left>
+                    <DropdownMenu left="true">
                     <DropdownItem>
                         <NavLink href="/announcements">
                           <a className="nav-link"> <img src="https://i.ibb.co/YZrZWVN/loudspeaker.png" alt="loudspeaker" border="0" width={30}></img> Announcements </a>

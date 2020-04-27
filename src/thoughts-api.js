@@ -7,8 +7,8 @@ const router = express.Router();
 router.use(bodyParser.json());
 
 const thoughts = [
-    { _id: 123, message: "I love pepperoni pizza!", author: "unknown" },
-    { _id: 456, message: "I'm watching Netflix.", author: "unknown" }
+    { _id: 123, message: "Please check the lesson hub for assignments", author: "unknown" },
+    { _id: 456, message: "No homework this Friday", author: "unknown" }
   ];
   
   router.get("/api/thoughts", (req, res) => {
