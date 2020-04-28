@@ -25,9 +25,12 @@ class Assignment_Hub extends React.Component{
                 <td>{assignment_name}</td>
                 {completeRow}
               <td>
-              <Link href = {{pathname: "/quiz", query: {assignment_id: id, assignment_name: assignment_name}}}>
+              {//<Link href = {{pathname: "/quiz", query: {assignment_id: id, assignment_name: assignment_name}}}>
+          }  
                 <a><button>Go to Quiz</button></a>
-              </Link>  
+                
+              {//</Link>}  
+              }
               </td>
               </tr>
             )
