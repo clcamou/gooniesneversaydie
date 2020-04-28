@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import Assignment_Hub from "../components/Assignment_Hub"
 
-export default async function assignmenthub({ user }) {  
+export default function assignmenthub({ user }) {  
 
     /* disconnected until API is set back up
     let data = await fetch("/api/getallstudentassignments", {
